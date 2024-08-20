@@ -66,9 +66,9 @@ export default function Home() {
 
         <section className="home" id="about">
           <div className="home-content">
-            <h1>Hi, I'm Daniel Fan</h1>
+            <h1>Hi, I&apos;m Daniel Fan</h1>
             <h3>Programmer, Chess Player, Explorer</h3>
-            <p>"I must understand the world, you see" - Richard Feynman</p>
+            <p>&quot;I must understand the world, you see&quot; - Richard Feynman</p>
           </div>
           <div className="home-img">
             <div className="glowing-circle">
@@ -113,8 +113,8 @@ export default function Home() {
 
                   <div className={tab === 'experience' ? " tab-contents active-tab" : "tab-contents"}>
                     <ul>
-                      <li><span>Comet</span> <br/>Project Intern (January '23 - March '23)</li>
-                      <li><span>AgilePoint</span> <br/>Software Automation Intern (April '24 - May '24)</li>
+                      <li><span>Comet</span> <br/>Project Intern (January &apos;23 - March &apos;23)</li>
+                      <li><span>AgilePoint</span> <br/>Software Automation Intern (April &apos;24 - May &apos;24)</li>
                     </ul>
                   </div>
 
@@ -171,8 +171,8 @@ export default function Home() {
                             <div className="layer">
                                 <h3> Pathfinding & Sorting Visualizer </h3>
                                 <p> Allows visualization of complex searching and sorting algorithms <br/>
-                                    Supported Pathfinding Algorithms - BFS, DFS, Dijkstra's
-                                    Supported Sorting Algorithms - Quicksort, insertion-sort, selection-sort, bogosort
+                                    Supported Pathfinding Algorithms - BFS, DFS, Dijkstra&apos;s <br/>
+                                    Supported Sorting Algorithms - Quicksort, insertion-sort, selection-sort, bogosort <br/>
                                     Supported Pointer Algorithms - Binary Search </p>
                                 <a href='https://github.com/danfanlol/AlgorithmVisualizer'><FaGithub size={40}/></a>
                             </div>
