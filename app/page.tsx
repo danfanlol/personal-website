@@ -9,7 +9,7 @@ import Image from 'next/image';
 import face1 from "../public/hometest.jpg"
 import face2 from "../public/clawtest.jpg"
 
-import face3 from "../public/chess.png"
+import face3 from "/chess.png"
 import face4 from "../public/work-2.png"
 import face5 from "../public/work-3.png"
 
@@ -75,7 +75,7 @@ export default function Home() {
               <span></span>
               <span></span>
               <div className="image">
-                <Image src={face1} alt="Daniel" />
+              <img src="/hometest.jpg" />
               </div>
             </div>
           </div>
@@ -86,13 +86,13 @@ export default function Home() {
             <div className="container">
               <div className="row">
                 <div className="about-col-1">
-                  <Image src={face2} alt="Claw" />
+                <img src="/clawtest.jpg" />
                 </div>
                 <div className="about-col-2">
                   <h1 className="sub-title">About Me</h1>
                   <p className="paragraph">
-                    Hello! I am an 18-year-old interested in technology from the suburbs of Philadelphia, Pennsylvania (class of 2024)
-                    with a heavy interest in computer science...
+                    Hello! I am a 19-year-old programmer in my sophomore year of college from the suburbs of Philadelphia, Pennsylvania with a heavy interest in computer science.  
+                    
                   </p>
                   <div className="tab-titles">
                     <p onClick={() => opentab('skills')} className={tab === 'skills' ?"tab-links active-link" : 'tab-links'}>Skills</p>
@@ -104,7 +104,7 @@ export default function Home() {
 
                   <div className={tab === 'skills' ? "tab-contents active-tab" : "tab-contents"}>
                     <ul>
-                      <li><span>Programming Languages</span> <br/> Fluent in Python, JavaScript, TypeScript, and Java</li>
+                      <li><span>Programming Languages</span> <br/> Fluent in Python, JavaScript, TypeScript, C, and Java</li>
                       <li><span>Frameworks/Libraries</span> <br/> React, Flask, Node.js, Bootstrap, Next.js</li>
                       <li><span>Technologies</span> <br/> Electron, AWS (Amplify), Firebase (Deployment)</li>
                       <li><span>Tools</span> <br/> PyCharm, IntelliJ IDEA, Visual Studio Code, MongoDB</li>
@@ -120,7 +120,7 @@ export default function Home() {
 
                   <div className={tab === 'education' ? "tab-contents active-tab" : "tab-contents"}>
                     <ul>
-                      <li><span>University of Maryland</span> <br/>Incoming Freshman (class of 2028)</li>
+                      <li><span>University of Maryland</span> <br/>Sophomore (Class of 2028)</li>
                     </ul>
                   </div>
 
@@ -151,7 +151,7 @@ export default function Home() {
                     <div className = "work-list">
                         
                         <div className = "work">
-                            <Image src={face3} alt="Daniel" />
+                            <img src="/chess.PNG" />
                             <div className="layer">
                                 <h3> Blindfold Chess Trainor </h3>
                                 <p> Appearing to require extraordinary visual-spatial abilities and memory, blindfold chess was considered miraculous for centuries. Under proper training and exercises, however, anybody can learn to play chess blindfolded and become a better chess player, critical thinker, and problem solver.  </p>
@@ -159,7 +159,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className = "work">
-                            <Image src={face4} alt="Daniel" />
+                            <img src="/work-2.png" />
                             <div className="layer">
                                 <h3> Fanaa </h3>
                                 <p> Fanaa is a small programming language that supports various fundamental programming concepts such as variable-declaration, function calling, conditional statements, loops, proper order of operations, and iteration. </p>
@@ -167,13 +167,12 @@ export default function Home() {
                             </div>
                         </div>
                         <div className = "work">
-                            <Image src={face5} alt="Daniel" />
+                            <img src="/work-3.png" />
                             <div className="layer">
                                 <h3> Pathfinding & Sorting Visualizer </h3>
                                 <p> Allows visualization of complex searching and sorting algorithms <br/>
-                                    Supported Pathfinding Algorithms - BFS, DFS, Dijkstra&apos;s <br/>
-                                    Supported Sorting Algorithms - Quicksort, insertion-sort, selection-sort, bogosort <br/>
-                                    Supported Pointer Algorithms - Binary Search </p>
+                                    Supported Pathfinding Algorithms - BFS, DFS<br/>
+                                    Supported Sorting Algorithms - Merge Sort, Quicksort, insertion-sort, selection-sort, bubble sort <br/>
                                 <a href='https://github.com/danfanlol/AlgorithmVisualizer'><FaGithub size={40}/></a>
                             </div>
                         </div>
